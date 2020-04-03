@@ -1,0 +1,21 @@
+service: websocket-example
+
+provider:
+  name: aws
+  stage: dev
+  region: us-east-1
+  runtime: nodejs10.x
+
+plugins:
+  - serverless-offline
+
+functions:
+  defaultHandler:
+    handler: gateway/index.defaultHandler
+    events:
+      - websocket:
+          route: $connect
+      - websocket:
+          route: $default
+      - websocket:
+          route: $disconnect
