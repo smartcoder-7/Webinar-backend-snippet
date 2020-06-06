@@ -21,7 +21,7 @@
     "@types/moment-timezone": "^0.5.12",
     "@types/node-fetch": "^2.5.5",
     "@types/rrule": "^2.2.9",
-    "apollo-server-express": "^2.7.0",
+    "apollo-server-express": "^2.14.2",
     "aws-sdk": "^2.517.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
